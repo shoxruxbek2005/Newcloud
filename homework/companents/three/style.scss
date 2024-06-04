@@ -1,0 +1,43 @@
+.three {
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+
+    .Three {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media(max-width:1024px) {
+    .Three{
+        flex-wrap: wrap;
+        text-align: center;
+        .card1{
+
+            margin-top:100px;
+        }
+    }
+    
+}
+
+@media(max-width:900px) {
+    .Three{
+        flex-direction: column;
+        .card1{
+            width: 80%;
+            margin:100px  auto;
+            h1{
+                font-size: 14px;
+            }
+            p,a{
+                font-size: 10px;
+            }
+        }
+    }
+    
+}

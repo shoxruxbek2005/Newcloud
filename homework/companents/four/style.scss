@@ -1,0 +1,51 @@
+.four {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    // justify-content: space-between;
+    padding: 100px;
+
+    .fourdiv {
+        // display: flex;
+        // align-items: center;
+        // padding: 20px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+
+        gap: 30px;
+    }
+}
+
+@media(max-width:1024px) {
+    .four {
+
+        .fourdiv {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+    }
+}
+@media(max-width:700px) {
+    .four {
+
+        .fourdiv {
+            
+            grid-template-columns: repeat(1, 1fr);
+            gap: 50px;
+            .card2{
+                width: 100%;
+                .card2img{
+                    & div:nth-of-type(2){
+                        width:20%;
+                        left: 40%;
+                        img{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
